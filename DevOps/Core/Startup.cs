@@ -43,6 +43,10 @@ namespace Core
             {
                 app.UseDeveloperExceptionPage();
             }
+            if (env.EnvironmentName.ToString() == "Test")
+            {
+                
+            }
             else
             {
                 app.UseExceptionHandler("/Error");
