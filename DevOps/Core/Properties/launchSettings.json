@@ -27,6 +27,14 @@
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"
+    },
+    "Test": {
+      "commandName": "Test",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Test"
+      },
+      "applicationUrl": "https://locahost:5002"
     }
   }
 }
