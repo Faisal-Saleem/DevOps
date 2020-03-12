@@ -4,7 +4,7 @@ pipeline {
 		stage("Initialize and Build") {
 			steps {
 				script {
-					bat 'echo %PATH%'
+					bat 'dotnet build "C:/Users/Faisal/Dropbox/University/Projects on GitHub/DevOps/DevOps"'
 				}
 			}
 		}
