@@ -1,13 +1,8 @@
 def buildApp() {
-	echo "Building the Application"
+	echo "Starting Application Build with dotnet."
+	echo "Checking out the directory"
+	print "cd C:\Users\Faisal\Dropbox\University\Projects on GitHub\DevOps\DevOps".execute().text
+	echo "Running dotnet msbuild"
+	print "dotnet msbuild DevOps.sln".execute().text
 }
-
-def testApp() {
-	echo "Testing the Application"
-}
-
-def deployApp() {
-	echo "Deploying the Application v ${params.VERSION}"
-}
-
 return this
