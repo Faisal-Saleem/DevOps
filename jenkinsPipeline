@@ -1,13 +1,10 @@
 pipeline {
 	agent any
-  
 	stages {
 		stage("Initialize and Build") {
 			steps {
 				script {
-					def gv
-					gv = load "script.groovy"
-					gv.buildApp()
+					'cmd /c dotnet build "C:/Users/Faisal/Dropbox/University/Projects on GitHub/DevOps/DevOps"'.execute().text
 				}
 			}
 		}
