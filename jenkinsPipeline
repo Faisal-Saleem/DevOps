@@ -4,7 +4,7 @@ pipeline {
 		stage("Initialize and Build") {
 			steps {
 				script {
-					'cmd /c dotnet build "C:/Users/Faisal/Dropbox/University/Projects on GitHub/DevOps/DevOps"'.execute().text
+					bat 'echo %PATH%'
 				}
 			}
 		}
