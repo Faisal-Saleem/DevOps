@@ -4,7 +4,7 @@ pipeline {
 		stage("Initialize and Build") {
 			steps {
 				script {
-					sh 'dotnet build "/Users/FS/Documents/Repo/DevOps/DevOps"'
+					sh 'dotnet build /Users/FS/Documents/Repo/DevOps/DevOps'
 				}
 			}
 		}
